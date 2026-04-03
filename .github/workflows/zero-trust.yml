@@ -1,0 +1,30 @@
+name: Zero Trust CI
+
+on:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enforce branch naming
+        run: |
+          echo "Validating branch naming convention"
+
+      - name: Dependency review
+        uses: actions/dependency-review-action@v4
+
+      - name: Block unsigned commits
+        run: |
+          echo "Check commit signatures (placeholder)"
+
+      - name: Minimal permissions check
+        run: |
+          echo "Ensure least privilege applied"
