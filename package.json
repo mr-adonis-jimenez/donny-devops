@@ -1,0 +1,14 @@
+{
+  "name": "donny-devops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Central DevOps control plane and MCP orchestration platform for the mr-adonis-jimenez portfolio repos.",
+  "scripts": {
+    "start": "node mcp/servers/devops-server.js",
+    "dev": "node --watch mcp/servers/devops-server.js",
+    "validate": "node scripts/validate-repo-map.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
