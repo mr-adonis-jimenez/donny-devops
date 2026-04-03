@@ -1,0 +1,10 @@
+{
+  "repos": [
+    "sales-horizon",
+    "geo-analytics-api",
+    "log-triage-sandbox",
+    "docker-sklearn-api",
+    "help-desk-intake",
+    "retail-analytics-sql"
+  ]
+}
