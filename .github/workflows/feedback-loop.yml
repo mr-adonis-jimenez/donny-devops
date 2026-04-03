@@ -1,0 +1,21 @@
+name: Feedback Loop
+
+on:
+  workflow_dispatch:
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Detect
+        run: echo "Detect issues"
+
+      - name: Fix
+        run: echo "Trigger remediation"
+
+      - name: Verify
+        run: echo "Run tests and security scans"
+
+      - name: Deploy
+        run: echo "Deploy if verified"
